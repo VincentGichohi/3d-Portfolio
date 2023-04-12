@@ -1,11 +1,32 @@
-import React from 'react';
-import { Tilt } from "react-tilt"
-import { motion } from 'framer-motion';
+import React from "react";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from '../styles';
-import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { styles } from "../styles";
+import { services } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px]
+          flex justify-evenly items-center flex-col">
+            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+            <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
@@ -14,8 +35,27 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-    </>
-  )
-}
 
-export default About
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+        Experienced software engineer with a passion for developing innovative
+        programs that expedite the efficiency and effectiveness of
+        organizational success. Well-versed in technology and writing code to
+        create systems that are reliable and user-friendly. Skilled leader who
+        has the proven ability to motivate, educate, and manage a team of
+        professionals to build software programs and effectively track changes.
+        Managing a team of professionals in managing data, ensuring that
+        accurate and correct data is collected.
+      </motion.p>
+
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default About;

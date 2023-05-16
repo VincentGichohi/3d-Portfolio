@@ -42,11 +42,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Software Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Front End  Developer",
     icon: mobile,
   },
   {
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Database Administrator",
     icon: creator,
   },
 ];
@@ -116,39 +116,6 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Senior Software Developer, Trainer",
-    company_name: "Loyal Computer Services and Training Company Limited",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "December 2014 - March 2018",
-    points: [
-      "Quickly adapted training plans for client needs, keeping timelines, budgets and desires in mind",
-      "Defined and maintained databases to deliver responsiveness to data client requests",
-      "Authored code in Python within Django framework and Javascript within NodeJS framework",
-      "Built APIs and data clients to consume APIs.",
-      "Analyzed team performance and identified opportunities for additional training.",
-      "Collaborated with multidisciplinary team of designers, developers and system administrators.",
-      "Managed efficient SQL queries and data transport",
-      "Defined and maintained databases to deliver responsiveness to data client requests.",
-    ],
-  },
-  {
-    title: "IT Consultant, Netrwork Administrator",
-    company_name: "Ministry of Lands and Physical Planning",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2019 - Sep 2019",
-    points: [
-      "Fixing problems in LAN infrastructure and testing and configuring software.",
-      "Troubleshooting system failures and identifying roadblocks in the network.",
-      "Designing and installing computer networks, connections and cabling.",
-      "Working with vendors to get needed equipment for the networks and systems.",
-      "Providing technical direction and giving training to coworkers about network systems.",
-      "Evaluating network performance to improve the network.",
-      "Monitored network performance to determine whether adjustments needed to be made and to determine where changes needed to be made in future.",
-    ],
-  },
-  {
     title: "Backend Developer",
     company_name: "Konza Silicon Company Limited",
     icon: shopify,
@@ -166,18 +133,53 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Senior Full Stack Software Developer",
+    company_name: "Ministry of Lands and Physical Planning",
+    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2019 - Sep 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led a team of developers in the analysis, design, and implementation of SaaS and PaaS solutions for clients.",
+      "Collaborated closely with stakeholders to gather requirements, provide technical guidance, and ensure alignment with business objectives.",
+      "Architected scalable and high-performance software systems using Python, Django, and JavaScript frameworks, adhering to best practices and industry standards.",
+      "Mentored and coached junior developers, fostering their professional growth and promoting knowledge sharing within the team.",
+      "Implemented advanced features and complex functionality, leveraging expertise in Python, Django, and React to deliver robust and elegant solutions.",
+      "Conducted code reviews and performed thorough testing to maintain code quality, optimize performance, and minimize bugs and issues.",
+      "Developed and maintained CI/CD pipelines to automate testing, deployment, and monitoring processes, increasing efficiency and reducing time to market.",
     ],
   },
+
+  {
+    title: "Senior Software Developer, Trainer",
+    company_name: "Loyal Computer Services and Training Company Limited",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "December 2014 - March 2018",
+    points: [
+      "Collaborated with product management and business stakeholders to define and prioritize product features, ensuring alignment with customer needs and market trends.",
+      "Led the design and implementation of microservices architecture, utilizing Python, Django, and React to develop scalable and modular components.",
+      "Implemented and optimized algorithms and data structures to improve system efficiency and performance.",
+      "Conducted code refactoring and technical debt reduction initiatives to enhance code quality, maintainability, and extensibility.",
+      "Implemented robust security measures, including encryption, authentication, and authorization mechanisms, to protect sensitive data and ensure compliance with industry standards.",
+      "Implemented and maintained automated testing frameworks, such as unit tests, integration tests, and end-to-end tests, to ensure software reliability and quality."
+    //   "Conducted performance profiling and optimization of software systems, identifying bottlenecks and implementing improvements to enhance response times and scalability.",
+    //   "Collaborated with data scientists and machine learning engineers to integrate AI and ML capabilities into software solutions, enabling intelligent data analysis and predictive functionalities.",
+    ],
+  },
+
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const testimonials = [
